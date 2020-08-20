@@ -1,0 +1,139 @@
+body {
+  font-family: 'Oswald', Arial, sans-serif; }
+
+/********************************* MOBILE MENU *********************************/
+#mobile-menu {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  position: fixed;
+  z-index: 3;
+  background: #312423ed;
+  display: none; }
+  #mobile-menu #close {
+    position: absolute;
+    top: 6px;
+    right: 30px;
+    color: #fff;
+    font-size: 30px; }
+  #mobile-menu a {
+    color: #fff; }
+    #mobile-menu a:hover {
+      color: #afafaf; }
+
+/********************************* HEADER *********************************/
+header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 1; }
+  header #hamburger {
+    color: #fff;
+    font-size: 30px; }
+  header a {
+    color: #fff;
+    margin-left: 25px; }
+    header a:hover {
+      color: #fff; }
+    header a:visited {
+      color: #fff; }
+  header .header-logo {
+    margin: auto;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; }
+
+.solid-header {
+  position: fixed;
+  background-color: #c69572;
+  transition: all ease 0.5s; }
+
+/********************************* HERO *********************************/
+#hero {
+  background-image: url(../img/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #hero .hero-logo {
+    width: 360px; }
+  #hero::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #332a2a9c;
+    height: 100vh; }
+  #hero .down-arrow {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    display: block;
+    width: 60px;
+    border-radius: 100px; }
+    #hero .down-arrow:hover {
+      filter: brightness(160%); }
+
+@media (max-width: 768px) {
+  .hero-logo {
+    max-width: 100%; } }
+/********************************* INTRO *********************************/
+#intro {
+  background: #e6cfb4; }
+
+/********************************* ABOUT *********************************/
+#bg-image {
+  background-image: url(../img/about.jpg);
+  background-position: right;
+  background-size: cover;
+  min-height: 480px; }
+
+#color {
+  background-color: #000; }
+
+#bg-image1 {
+  background-image: url(../img/about1.png);
+  background-position: left;
+  background-size: cover;
+  min-height: 500px; }
+
+/*********************************  MENU *********************************/
+#menu {
+  background: #e6cfb4; }
+
+/*********************************  CONTACT *********************************/
+#contact-bg {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.103), rgba(0, 0, 0, 0.726)), url(../img/contact.jpg);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover; }
+
+#contact-bg1 {
+  background: rgba(27, 8, 8, 0.678); }
+
+/*********************************  MAP *********************************/
+#map {
+  height: 500px; }
+
+/*********************************  FOOTER *********************************/
+footer {
+  background: #251818; }
+  footer a {
+    color: #afafaf;
+    font-size: 24px; }
+    footer a:hover {
+      color: #fff; }
+    footer a:active {
+      color: #afafaf; }
+
+@media (max-width: 768px) {
+  footer {
+    text-align: center; }
+    footer #socicons {
+      text-align: center !important; } }
+
+/*# sourceMappingURL=style.css.map */
