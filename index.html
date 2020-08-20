@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+        integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+        crossorigin=""></script>
+</head>
+
+<body>
+
+    <div id="mobile-menu">
+        <a id="close" href="#"><i class="fas fa-bars"></i></a>
+        <div class="container">
+            <div class="row vh-100 align-items-center">
+                <div class="col-12 text-center">
+
+                    <div>
+                        <a class="mobile-menu-item text-decoration-none text-uppercase h3" href="#">home</a>
+                    </div>
+                    <div class="my-3">
+                        <a class="mobile-menu-item text-decoration-none text-uppercase h3" href="#">products</a>
+                    </div>
+                    <div class="mb-3">
+                        <a class="mobile-menu-item text-decoration-none text-uppercase h3" href="#">contact</a>
+                    </div>
+                    <div>
+                        <a class="mobile-menu-item text-decoration-none text-uppercase h3" href="#">about us</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="header" class="p-3">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-4">
+                    <a class="header-logo" href="#">COFFEE SHOP</a>
+                </div>
+                <div class="d-none d-md-block col-8 text-right">
+                    <a class="text-decoration-none text-uppercase" href="#">home</a>
+                    <a class="text-decoration-none text-uppercase" href="#">products</a>
+                    <a class="text-decoration-none text-uppercase" href="#">contact</a>
+                    <a class="text-decoration-none text-uppercase" href="#">about us</a>
+                </div>
+                <div class="col-8 d-md-none text-right">
+                  <a id="menu-btn" href="#"><i class="fas fa-bars" id="hamburger"></i></a>  
+                </div>
+            </div>
+        </div>
+    </header>
+    <!--end header-->
+
+    <section id="hero" class="text-light">
+        <div class="container-fluid">
+            <div class="row vh-100 align-items-center pb-5">
+                <div class="col-12 text-center">
+                    <img class="hero-logo" src="img/logo.png" alt="coffe shop logo">
+                    <h1 class="display-2 font-wieght-bold">THE HOME OF COFFEE</h1>
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget elit nulla.
+                        Proin lacinia ipsum est, eget pharetra libero posuere ut. Curabitur ac dignissim odio, id auctor
+                        erat</p>
+                </div>
+            </div>
+        </div>
+        <a href="#intro"><img class="down-arrow" src="img/menu-down-arrow.png" alt=""></a>
+    </section>
+    <!--end #hero-->
+
+    <section id="intro" class="py-5">
+        <div class="container py-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-10 col-xl-6 text-center py-5">
+                    <h1 class="font-weight-bold">THE BEST COFFEE SHOP</h1>
+                    <p class="text-muted lead py-5">Donec tincidunt lacus non laoreet sagittis. Vestibulum at egestas
+                        risus.
+                        Nullam ut commodo orci.Cras eget ullamcorper nisl, eu ullamcorper dolor. Integer vitae nunc non
+                        libero ullamcorper gravida faucibus sit amet purus. In non nisl sagittis, ornare leo sit amet,
+                        auctor risus. Nulla consequat turpis sed purus convallis, eu condimentum neque consequat.</p>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-sm-4 align-self-end text-center">
+                    <img class="img-fluid py-5" src="img/icon1.png" alt="">
+                    <p class="h4 font-weight-bold">BEST BEANS</p>
+
+                </div>
+                <div class="col-sm-4  align-self-end text-center">
+                    <img class="img-fluid" src="img/icon2.png" alt="">
+                    <p class="h4 font-weight-bold">QUALITY MILK</p>
+
+                </div>
+                <div class="col-sm-4 align-self-end text-center">
+                    <img class="img-fluid" src="img/icon3.png" alt="">
+                    <p class="h4 font-weight-bold">PERFECT BLEND</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end #intro-->
+
+    <section id="about">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-5 offset-md-1 align-self-center">
+                    <h2>AMAZING PLACE</h2>
+                    <p class="py-3">Morbi vel finibus odio. Pellentesque volutpat enim vel enim mollis, a rutrum nisi
+                        tempor. Nullam
+                        ultrices cursus egestas.Cras eget ullamcorper nisl, eu ullamcorper dolor. Integer vitae nunc non
+                        libero ullamcorper gravida faucibus sit amet purus. In non nisl sagittis, ornare leo sit amet,
+                        auctor risus. Nulla consequat turpis sed purus convallis, eu condimentum neque consequat.</p>
+                </div>
+                <div class="d-none d-md-block col-md-5 offset-md-1" id="bg-image">
+
+                </div>
+            </div>
+
+            <div class="row" id="color">
+                <div class="col-md-5 offset-md-1" id="bg-image1">
+
+                </div>
+                <div class="col-md-5 offset-md-1 align-self-center text-light">
+                    <h2>GREAT COFFEE</h2>
+                    <p class="text-muted lead py-3">Nam interdum dui ac nunc cursus, fringilla porta enim tristique.
+                        Proin porttitor erat a ante
+                        varius eleifend. Morbi quis tellus nisi. Nullam venenatis rutrum tincidunt. Nullam a pulvinar
+                        enim.</p>
+                    <button class="btn btn-primary">FIND OUT MORE</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!--end #about-->
+
+    <section id="menu">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col-12 text-center py-5">
+                    <h1>OUR MENU</h1>
+                    <p class="text-muted lead">Cras eget ullamcorper nisl, eu ullamcorper dolor. Integer vitae nunc non
+                        libero ullamcorper gravida faucibus sit amet purus. In non nisl sagittis, ornare leo sit amet,
+                        auctor risus.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img src="img/coffee1.png" alt="">
+                    <h2 class="my-4">HOMEMADE COFFEE</h2>
+                    <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
+                        imperdiet id lectus et, mollis hendrerit orci.</p>
+                    <p class="h3">2&euro;</p>
+
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img src="img/coffee2.png" alt="">
+                    <h2 class="my-4">MOCHACCINO</h2>
+                    <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
+                        imperdiet id lectus et, mollis hendrerit orci.</p>
+                    <p class="h3">3&euro;</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img src="img/coffee3.png" alt="">
+                    <h2 class="my-4">CAPPUCCINO</h2>
+                    <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
+                        imperdiet id lectus et, mollis hendrerit orci.</p>
+                    <p class="h3">2&euro;</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img src="img/coffee4.png" alt="">
+                    <h2 class="my-4">LATTE</h2>
+                    <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
+                        imperdiet id lectus et, mollis hendrerit orci.</p>
+                    <p class="h3">4&euro;</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img src="img/coffee5.png" alt="">
+                    <h2 class="my-4">ESPRESSO</h2>
+                    <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
+                        imperdiet id lectus et, mollis hendrerit orci.</p>
+                    <p class="h3">3&euro;</p>
+                </div>
+                <div class="col-sm-6 col-md-4 p-5 text-center">
+                    <img src="img/coffee6.png" alt="">
+                    <h2 class="my-4">BLACK COFFEE</h2>
+                    <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
+                        imperdiet id lectus et, mollis hendrerit orci.</p>
+                    <p class="h3">2&euro;</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--end #menu-->
+
+    <section id="contact">
+        <div class="container-fluid text-light">
+            <div class="row" id="contact-bg">
+                <div class="col-md-5 offset-md-1 p-4">
+                    <h2>YOU ARE WELCOME</h2>
+                    <p>COME ON IN!</p>
+                    <br>
+                    <h4>WEEKDAYS</h4>
+                    <p>08 PM - 12AM</p>
+                    <br>
+                    <h4>WEEKENDS</h4>
+                    <p>12 PM - 02 AM</p>
+
+                </div>
+                <div class="col-md-6 p-4" id="contact-bg1">
+                    <h2>CONTACT</h2>
+                    <br>
+                    <h4>PHONE</h4>
+                    <p>+(000) 111 222 333</p>
+                    <br>
+                    <h4>MAIL</h4>
+                    <p>coffee@mail.com</p>
+                    <br>
+                    <h4>ADRESS</h4>
+                    <p>123, Some Street NY, New York</p>
+
+                </div>
+            </div>
+        </div>
+    </section><!-- end #contact-->
+
+    <section id="map">
+
+    </section>
+
+    <footer>
+        <div class="container-fluid text-light py-3">
+            <div class="row">
+                <div class="col-md-5 offset-md-1 align-self-center">
+                    Coffee Shop | All rights reserved
+
+                </div>
+                <div class="col-md-5 text-right" id="socicons">
+                    <a href="#" class="px-2"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#" class="px-2"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="px-2"><i class="fab fa-twitter-square"></i></a>
+                    <a href="#" class="px-2"><i class="fab fa-viber"></i></a>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        var mymap = L.map('map').setView([40.705238, -73.907600], 16);
+        var marker = L.marker([40.705238, -73.907600]).addTo(mymap);
+        L.tileLayer('		https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: 'Easy find us',
+            maxZoom: 18,
+
+        }).addTo(mymap);
+    </script>
+
+
+   
+   
+
+
+    <script>
+
+  window.addEventListener("load", function(){
+
+    /*    let menuBtn = document.getElementById("menu-btn");
+            let mobileMenu = document.getElementById("mobile-menu");
+            let closeBtn = document.getElementById("close");
+
+
+            menuBtn.addEventListener("click", function(){
+
+                mobileMenu.style.display = "block";
+
+            });
+
+            closeBtn.addEventListener("click", function(){
+
+                mobileMenu.style.display = "none";
+
+            });
+
+            let mobileMenuItems = document.getElementsByClassName("mobile-menu-item");
+
+            for (let i = 0; i < mobileMenuItems.length; i++){
+                mobileMenuItems[i].addEventListener("click", function(){
+                    mobileMenu.style.display = "none";
+                });
+            } */
+
+        $("#menu-btn, #close").click(function(){
+                $("#mobile-menu").toggle();
+            }); 
+                
+            
+
+            // for header
+
+          /*  let heroSection = document.getElementById("hero");
+            let heroSectionHeight = heroSection.clientHeight;
+
+            let header = document.getElementById("header");
+
+            document.addEventListener("scroll", function(){
+
+                if(document.documentElement.scrollTop > heroSectionHeight){
+                    if(!header.classList.contains("solid-header")){
+                        header.classList.add("solid-header");
+                    }
+                    else {
+                        if(header.classList.contains("solid-header")){
+                            header.classList.remove("solid-header");
+                        }
+                    }
+                }
+
+            });  */  
+
+
+          /*  $(document).scroll (function(){
+                let header = $("#header");
+
+                if ($(this).scrollTop() > $("#hero").height()){
+                    if (!header.hasClass("solid-header")){
+                        header.addClass("solid-header");
+                    }
+                    else {
+                        if (header.hasClass("solid-header")){
+                            header.removeClass("solid-header");
+                        }
+                    }
+                }
+
+            });  */
+
+        });
+
+   
+
+    </script>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/jquery-3.5.1.slim.min.js"></script>
+
+    
+
+</body>
+
+</html>
