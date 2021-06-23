@@ -14,9 +14,11 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
         integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
         crossorigin=""></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -45,7 +47,7 @@
         </div>
     </div>
 
-    <header id="header" class="p-3">
+    <header id="header" class="p-3" data-aos="zoom-in">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-4">
@@ -68,7 +70,7 @@
     <section id="hero" class="text-light">
         <div class="container-fluid">
             <div class="row vh-100 align-items-center pb-5">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="fade-up"  data-aos-duration="1500">
                     <img class="hero-logo" src="img/logo.png" alt="coffe shop logo">
                     <h1 class="display-2 font-wieght-bold">THE HOME OF COFFEE</h1>
                     <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget elit nulla.
@@ -84,7 +86,7 @@
     <section id="intro" class="py-5">
         <div class="container py-5">
             <div class="row justify-content-center py-5">
-                <div class="col-10 col-xl-6 text-center py-5">
+                <div class="col-10 col-xl-6 text-center py-5" data-aos="fade-right" data-aos-duration="1000">
                     <h1 class="font-weight-bold">THE BEST COFFEE SHOP</h1>
                     <p class="text-muted lead py-5">Donec tincidunt lacus non laoreet sagittis. Vestibulum at egestas
                         risus.
@@ -94,17 +96,17 @@
                 </div>
             </div>
             <div class="row py-5">
-                <div class="col-sm-4 align-self-end text-center">
+                <div class="col-sm-4 align-self-end text-center" data-aos="fade-right" data-aos-duration="1000">
                     <img class="img-fluid py-5" src="img/icon1.png" alt="">
                     <p class="h4 font-weight-bold">BEST BEANS</p>
 
                 </div>
-                <div class="col-sm-4  align-self-end text-center">
+                <div class="col-sm-4  align-self-end text-center" data-aos="fade-right" data-aos-delay="500" data-aos-duration="1500">
                     <img class="img-fluid" src="img/icon2.png" alt="">
                     <p class="h4 font-weight-bold">QUALITY MILK</p>
 
                 </div>
-                <div class="col-sm-4 align-self-end text-center">
+                <div class="col-sm-4 align-self-end text-center" data-aos="fade-right" data-aos-delay="1000" data-aos-duration="2000">
                     <img class="img-fluid" src="img/icon3.png" alt="">
                     <p class="h4 font-weight-bold">PERFECT BLEND</p>
 
@@ -152,7 +154,7 @@
     <section id="menu">
         <div class="container">
             <div class="row py-5">
-                <div class="col-12 text-center py-5">
+                <div class="col-12 text-center py-5" data-aos="fade-right" data-aos-duration="1000">
                     <h1>OUR MENU</h1>
                     <p class="text-muted lead">Cras eget ullamcorper nisl, eu ullamcorper dolor. Integer vitae nunc non
                         libero ullamcorper gravida faucibus sit amet purus. In non nisl sagittis, ornare leo sit amet,
@@ -161,7 +163,7 @@
             </div>
 
             <div class="row">
-                <div class="col-sm-6 col-md-4 p-5 text-center">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-aos="flip-left" data-aos-duration="1500">
                     <img src="img/coffee1.png" alt="">
                     <h2 class="my-4">HOMEMADE COFFEE</h2>
                     <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
@@ -169,35 +171,35 @@
                     <p class="h3">2&euro;</p>
 
                 </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="500">
                     <img src="img/coffee2.png" alt="">
                     <h2 class="my-4">MOCHACCINO</h2>
                     <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
                         imperdiet id lectus et, mollis hendrerit orci.</p>
                     <p class="h3">3&euro;</p>
                 </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-aos="flip-left" data-aos-duration="1500" data-aos-delay="1000">
                     <img src="img/coffee3.png" alt="">
                     <h2 class="my-4">CAPPUCCINO</h2>
                     <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
                         imperdiet id lectus et, mollis hendrerit orci.</p>
                     <p class="h3">2&euro;</p>
                 </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="500">
                     <img src="img/coffee4.png" alt="">
                     <h2 class="my-4">LATTE</h2>
                     <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
                         imperdiet id lectus et, mollis hendrerit orci.</p>
                     <p class="h3">4&euro;</p>
                 </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="1000">
                     <img src="img/coffee5.png" alt="">
                     <h2 class="my-4">ESPRESSO</h2>
                     <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
                         imperdiet id lectus et, mollis hendrerit orci.</p>
                     <p class="h3">3&euro;</p>
                 </div>
-                <div class="col-sm-6 col-md-4 p-5 text-center">
+                <div class="col-sm-6 col-md-4 p-5 text-center" data-aos="flip-right" data-aos-duration="1500" data-aos-delay="1500">
                     <img src="img/coffee6.png" alt="">
                     <h2 class="my-4">BLACK COFFEE</h2>
                     <p class="lead my-3">Morbi non augue facilisis, rhoncus sem eget, fringilla enim. Sed libero est,
@@ -266,7 +268,12 @@
 
     <script>
         var mymap = L.map('map').setView([40.705238, -73.907600], 16);
-        var marker = L.marker([40.705238, -73.907600]).addTo(mymap);
+        var myIcon = L.icon({
+            iconUrl: 'img/marker-icon.png'
+        });
+        var marker = L.marker([40.705238, -73.907600], {
+            icon: myIcon
+        }).addTo(mymap);
         L.tileLayer('		https://a.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: 'Easy find us',
             maxZoom: 18,
@@ -286,22 +293,13 @@
     /*    let menuBtn = document.getElementById("menu-btn");
             let mobileMenu = document.getElementById("mobile-menu");
             let closeBtn = document.getElementById("close");
-
-
             menuBtn.addEventListener("click", function(){
-
                 mobileMenu.style.display = "block";
-
             });
-
             closeBtn.addEventListener("click", function(){
-
                 mobileMenu.style.display = "none";
-
             });
-
             let mobileMenuItems = document.getElementsByClassName("mobile-menu-item");
-
             for (let i = 0; i < mobileMenuItems.length; i++){
                 mobileMenuItems[i].addEventListener("click", function(){
                     mobileMenu.style.display = "none";
@@ -318,11 +316,8 @@
 
           /*  let heroSection = document.getElementById("hero");
             let heroSectionHeight = heroSection.clientHeight;
-
             let header = document.getElementById("header");
-
             document.addEventListener("scroll", function(){
-
                 if(document.documentElement.scrollTop > heroSectionHeight){
                     if(!header.classList.contains("solid-header")){
                         header.classList.add("solid-header");
@@ -333,13 +328,11 @@
                         }
                     }
                 }
-
             });  */  
 
 
           /*  $(document).scroll (function(){
                 let header = $("#header");
-
                 if ($(this).scrollTop() > $("#hero").height()){
                     if (!header.hasClass("solid-header")){
                         header.addClass("solid-header");
@@ -350,14 +343,16 @@
                         }
                     }
                 }
-
             });  */
 
         });
 
-   
 
     </script>
+
+<script>
+    AOS.init();
+  </script>
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/jquery-3.5.1.slim.min.js"></script>
